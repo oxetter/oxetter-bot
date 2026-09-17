@@ -1,6 +1,0 @@
-aiogram
-pydantic
-matplotlib
-networkx
-pillow
-flask
