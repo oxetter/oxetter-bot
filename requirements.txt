@@ -1,5 +1,0 @@
-pyTelegramBotAPI
-matplotlib
-networkx
-pillow
-flask
