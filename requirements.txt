@@ -1,0 +1,6 @@
+pyTelegramBotAPI
+pillow
+flask
+supabase
+requests
+phonenumbers
