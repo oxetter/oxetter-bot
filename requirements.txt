@@ -1,5 +1,0 @@
-pyTelegramBotAPI
-pillow
-flask
-supabase
-requests
