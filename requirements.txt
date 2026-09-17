@@ -1,4 +1,5 @@
-aiogram==3.4.1
+aiogram
+pydantic
 matplotlib
 networkx
 pillow
