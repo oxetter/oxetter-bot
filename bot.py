@@ -610,7 +610,7 @@ def country_by_phone(phone):
     if digits.startswith("998"):
         return "Узбекистан"
     if digits.startswith("996"):
-return "Кыргызстан"
+        return "Кыргызстан"
     if digits.startswith("992"):
         return "Таджикистан"
     if digits.startswith("993"):
