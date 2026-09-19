@@ -2132,7 +2132,7 @@ if bot:
 
     def process_search_nick(message):
         uid = message.from_user.id
- not has_subscription(uid) and not has_trial_left(uid):
+        if not has_subscription(uid) and not has_trial_left(uid):
             bot.send_message(message.chat.id, "❌ Нет подписки.")
             send_menu(message.chat.id, uid)
             return
