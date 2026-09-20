@@ -2120,9 +2120,9 @@ if bot:
             bot.answer_callback_query(call.id, "✅ Подписка подтверждена!")
             bot.send_message(call.message.chat.id, "✅ Добро пожаловать!", reply_markup=main_menu_inline(uid))
         else:
-....bot.answer_callback_query(call.id, "❌ Не подписан!", show_alert=True)
-        
-....@bot.callback_query_handler(func=lambda call: call.data == "admin_stats")
+            bot.answer_callback_query(call.id, "❌ Не подписан!", snow_alert=True)
+
+    @bot.callback_query_handler(func=lamba call: call.data == "admin=stats")
 def cb_admin_stats(call):
     uid = call.from_user.id
     if not ADMIN_ID or uid != ADMIN_ID:
