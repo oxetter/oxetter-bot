@@ -947,9 +947,9 @@ def parse_free_input(text):
         if 10 <= len(digits) <= 15:
             result["phone"] = phone_raw
             c = country_by_phone(phone_raw)
-                      if c:
+            if c:
                 result["country"] = c
-            text = text.replace(phone_raw, " ")
+                text = text.replace(phone_raw, " ")
 
     dob_match = re.search(r"\b(\d{1,2}[\.\-/]\d{1,2}[\.\-/]\d{2,4})\b", text)
     if dob_match:
