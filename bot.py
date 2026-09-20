@@ -2128,8 +2128,8 @@ if bot:
     if not ADMIN_ID or uid != ADMIN_ID:
         bot.answer_callback_query(call.id, "❌ Нет доступа", show_alert=True)
         return
-    bot.send_message(call.message.chat.id, "📊 Считаю статистику...")
-    try:
+        bot.send_message(call.message.chat.id, "📊 Считаю статистику...")
+        try:
             s = admin_stats()
             bot.send_message(call.message.chat.id, format_admin_stats(s))
         except Exception as e:
