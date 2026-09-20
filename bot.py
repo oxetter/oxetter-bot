@@ -2430,8 +2430,8 @@ def process_search_fio(message):
                 text += "  ... и ещё " + str(len(dorks) - 15) + "\n"
         bot.send_message(message.chat.id, text)
     except Exception as e:
-        bot.send_message(message.chat.id, "❌ Ошибка: " + str(e)[:200])
-    send_menu(message.chat.id, uid)
+            bot.send_message(message.chat.id, "❌ Ошибка: " + str(e)[:200])
+        send_menu(message.chat.id, uid)
 
 # ============ ПОИСК: НИК ============
 @bot.callback_query_handler(func=lambda call: call.data == "search_nick")
