@@ -2135,9 +2135,9 @@ if bot:
         except Exception as e:
             bot.send_message(call.message.chat.id, "❌ Ошибка: " + str(e)[:200])
 
-@bot.callback_query_handler(func=lambda call: call.data == "menu_example")
-def cb_example(call):
-    bot.answer_callback_query(call.id)
+    @bot.callback_query_handler(func=lambda call: call.data == "menu_example")
+    def cb_example(call):
+        bot.answer_callback_query(call.id)
     bot.send_message(call.message.chat.id, EXAMPLE_GRAPH)
     send_menu(call.message.chat.id, call.from_user.id)
 
