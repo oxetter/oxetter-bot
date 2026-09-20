@@ -2120,7 +2120,7 @@ if bot:
             bot.answer_callback_query(call.id, "✅ Подписка подтверждена!")
             bot.send_message(call.message.chat.id, "✅ Добро пожаловать!", reply_markup=main_menu_inline(uid))
         else:
-            @bot.answer_callback_query(call,id
+            @bot.answer_callback_query(call.id, "❌ Не подписан!", show_alert=True)
             @bot.callback_query_handler(func=lambda call: call.data == "admin_stats") 
 def cb_admin_stats(call):
     uid = call.from_user.id
