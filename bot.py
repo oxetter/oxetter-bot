@@ -1779,7 +1779,7 @@ def render_graph(data):
                 rel_lines.append("[TG] " + str(rdata["telegram"]))
             if rdata.get("email"):
                 rel_lines.append("[MAIL] " + str(rdata["email"]))
-                 if rdata.get("address"):
+            if rdata.get("address"):
                 rel_lines.append("[ADR] " + str(rdata["address"])[:25])
 
             rel_bbox = draw_node(rel_x, rel_cy, rel_lines, color)
